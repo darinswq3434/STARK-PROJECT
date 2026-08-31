@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}SI{% endblock title%}</title> 
+    <link rel="stylesheet" href="{% static 'suits/css/style.css'%}?v=2">
+
+</style>
+</head>
+<body>
+    <div class='container'>  
+        
+        <header> 
+            <div class='logo'>  
+                <h2>STARK INDUSTRIES</h2>
+            </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'home' %}"><span>HOME</span></a></li>
+                        <li><a href="{% url 'armor' %}">ARMOR</a></li> 
+                        <li><a href="{% url 'technology' %}">TECHNOLOGIES</a></li>
+                        <li><a href="{% url 'actor' %}">ACTOR</a></li>
+                        <li><a href="{% url 'about' %}">ABOUT</a></li> 
+                    </ul>
+                </nav>
+
+        </header>
+
+    <main> 
+
+        {% block content %} 
+        
+        {% endblock content %} 
+        </main>
+
+    <footer> 
+
+        <p class="footer-p">© 2024 STARK INDUSTRIES. ALL RIGHTS RESERVED.</p>
+
+    </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+{% extends "suits/base.html" %}
+
+{% block content %}
+
+<div class="technologies">
+    
+    {% for technology in technologies %}
+
+        <div class="technology">
+
+            {% comment %} <img src="{{ technology.image.url }}" alt="{{ technology.name }}"> {% endcomment %}
+
+            <h2>{{ technology.name }}</h2>
+
+            <p>{{ technology.description }}</p>
+
+            <a href="{% url 'technology_detail' technology.id %}" class="technology-detail">
+                VIEWS DETAILS →
+            </a>
+
+        </div>
+
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,39 @@
+```html
+{% extends 'suits/base.html' %}
+
+{% block content %}
+
+<div class="actors">
+
+    {% for actor in actors %}
+
+    <div class="actor-card">
+
+        <h2>{{ actor.name }}</h2>
+
+        {% if actor.image %}
+            <img src="{{ actor.image.url }}" alt="{{ actor.name }}">
+        {% endif %}
+
+        {% if actor.character %}
+            <p class="actor-character">{{ actor.character }}</p>
+        {% endif %}
+
+        {% if actor.description %}
+            <p>{{ actor.description }}</p>
+        {% else %}
+            <p><i>Биография пока не добавлена.</i></p>
+        {% endif %}
+
+    </div>
+
+    {% empty %}
+
+        <h2>Пока нет актеров.</h2>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+```

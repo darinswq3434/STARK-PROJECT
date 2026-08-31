@@ -1,0 +1,79 @@
+{% extends 'suits/base.html' %}
+
+{%load static%}
+
+{% block content %}
+
+<section class="first">
+    <div class="hero-background">
+        <img src="{% static 'suits/images/tonylogo.png' %}" alt="">
+    </div>
+
+    <div class="hero-text">
+
+        <p class="subtitle">STARK INDUSTRIES</p>
+
+        <h1 class="future">FORWARD<br>TO THE FUTURE.</h1>
+
+        
+        <div class="hero-buttons">
+            <nav>
+                <p class="description">
+                    Добро пожаловать в архив Stark Industries.<br>
+                    Исследуйте коллекцию брони Тони Старка,<br>
+                    её технологии, характеристики и историю создания.
+                </p>
+                <ul>
+                    <li><a href="{%url 'history'%}" class="btn1"> AVENGERS ARCHIVE</a></li>
+                    <li><a href="{%url 'archive'%}" class="btn2">STARK INDUSTRIES </a></li>
+                </ul>
+            </nav>
+        </div> 
+
+    </div>
+
+</section>
+
+<hr class="bottom-top-hr">
+
+<section class="second">
+
+    <div class="info-card">
+        <h2>85</h2>
+        <div class="line"></div>
+        <p>ARMOR MODELS</p>
+    </div>
+
+    <div class="info-card">
+        <h2>STARK</h2>
+        <div class="line"></div>
+        <p>ENGINEERING</p>
+    </div>
+
+    <div class="info-card">
+        <h2>∞</h2>
+        <div class="line"></div>
+        <p>OPPORTUNITIES</p>
+    </div>
+
+</section>
+
+
+<section class="third">
+
+    <div class="line-red"></div>
+
+    <h2 class="bottom-title">WELCOME TO STARK INDUSTRIES</h2>
+
+    <p class="bottom-p">
+        From the first prototype to the most advanced armor,<br>
+        every model represents innovation, engineering and<br>
+        the vision of Tony Stark.
+    </p>
+    <div class="line-red"></div>
+    
+    <hr class="bottom-top-hr">
+
+</section>
+
+{% endblock %}

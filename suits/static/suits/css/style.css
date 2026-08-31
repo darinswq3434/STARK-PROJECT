@@ -1,0 +1,1305 @@
+* {
+    box-sizing: border-box;
+}
+body{
+ background-image: url("../images/logo.JPG");
+   
+}
+
+header {
+    color: whitesmoke;           
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 20px;  
+}
+
+header nav ul {
+    display: flex;             
+    list-style: none;              
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;             
+}
+
+header nav ul li a {
+    text-decoration: none;          
+    color: inherit; 
+    transition: 0.3s;                
+}
+nav ul li a span{
+    color: rgb(191, 12, 12);
+}
+
+header nav ul li a:hover {
+    color: rgb(191, 12, 12); 
+    text-shadow:  0 0 5px rgba(255, 0, 0, 1);                
+}
+header nav ul li a:hover span {
+    color: rgb(191, 12, 12);
+    text-shadow:  0 0 5px rgba(255, 0, 0, 1);                 
+}
+/**********************************************************************/
+.second{
+    margin-top: 50px auto;
+}
+.subtitle{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.future{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+.description{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 30px auto;
+}
+
+
+.second{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.info-card {
+    width: 190px;              /* ширина */
+    height: 160px;             /* высота */
+    
+    background: black;       /* фон */
+    border: 1.5px solid #c10808; /* рамка */
+    color: white;
+    
+    display: flex;             /* включаем Flexbox */
+    flex-direction: column;    /* элементы сверху вниз */
+    justify-content: center;   /* центр по вертикали */
+   
+    text-align: center;        /* текст по центру */
+}
+
+.info-card h2{
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.line{
+    width: 50px;
+    height: 1px;
+    background-color: red;
+    margin: 20px auto;
+}
+.info-card p{
+    font-size: 12px;
+
+}
+
+.line-red{
+    width: 50px;
+    height: 1px;
+    background-color: red;
+    margin: 35px auto;
+    
+
+}
+
+.third{
+    text-align: center;
+    color: white;
+    
+}
+.bottom-title{
+    font-size: 16px;
+}
+.bottom-p{
+    font-size: 12px;
+}
+.footer-p{
+    text-align: center;
+    color: white;
+    font-size: 7px;
+}
+
+.bottom-top-hr {
+    
+    margin: 50px auto;
+    width: 100%;
+    max-width: 755px;
+    color: rgba(255, 255,255, 0.1);
+}
+
+.hero-buttons ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+        margin-right: 45px;
+    
+
+}
+.hero-buttons a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.hero-buttons nav ul li a:hover {
+    color: rgb(191, 12, 12);
+    text-shadow:  0 0 5px rgb(8, 7, 7);       
+                    
+}
+/**********************************************************************************/
+
+.btn1{
+    width: 170px;
+    height: 50px;
+    background: rgb(106, 8, 8);       /* фон */
+    border-radius: 5px;
+    
+    
+    
+    
+    display: flex;             /* включаем Flexbox */
+    flex-direction: column;    /* элементы сверху вниз */
+    justify-content: center;   /* центр по вертикали */
+   
+    text-align: center; 
+    transition: 0.3s;
+    margin: 20px auto;
+}
+.btn2{
+    width: 170px;
+    height: 50px;
+    background: black;       /* фон */
+    border: 0.5px solid white; /* рамка */
+    border-radius: 5px;
+    margin: 20px auto;
+    
+    
+    
+    display: flex;             /* включаем Flexbox */
+    flex-direction: column;    /* элементы сверху вниз */
+    justify-content: center;   /* центр по вертикали */
+   
+    text-align: center; 
+    transition: 0.3s;
+}
+
+/***********************************************************************************/
+
+.armors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: 20px;
+}
+
+.armor{
+
+    background: black;
+    border: 2px solid rgb(191, 12, 12) ;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+   filter: blur(2px); 
+   transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.armor p{
+    color: white;
+    text-align: justify;
+    line-height: 1.6;
+}
+.armor h2{
+    color: rgb(191, 12, 12) ;
+}
+.armor-detail{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    
+}
+.armor-detail:hover {
+    color: rgb(191, 12, 12);
+}
+.armor:hover{
+    filter: blur(0); 
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(16, 104, 227, 0.917);
+}
+
+
+
+
+
+/******************************************/
+
+.model h2{ 
+    color: white;
+    text-align: center; 
+    margin: 40px 0 30px; 
+    font-size: 30px; 
+}
+
+
+.model {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+.model h2 {
+    color: white;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+
+.armor-info {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* Картинка */
+
+.armor-image {
+    width: 45%;
+    text-align: center;
+}
+
+.armor-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border: 2px solid rgb(191, 12, 12);
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.armor-details {
+    width: 55%;
+    color: white;
+    border-left: 2px solid rgb(191, 12, 12);
+    padding-left: 30px;
+}
+
+.armor-details p {
+    font-size: 22px;
+    margin: 18px 0;
+}
+
+.armor-details b {
+    color: rgb(191, 12, 12);
+}
+
+.description {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    color: white;
+}
+
+.description h2,
+.armor-technologies h2 {
+    color: rgb(191, 12, 12);
+    font-size: 22px;
+    border-bottom: 1px solid rgb(191, 12, 12);
+    padding-bottom: 10px;
+}
+
+.description p {
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+
+.armor-technologies {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    color: white;
+}
+
+.armor-technologies ul {
+    padding-left: 20px;
+}
+
+.armor-technologies li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.armor-technologies li::marker {
+    color: rgb(191, 12, 12);
+}
+
+
+.armor-back {
+   
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto 30px; 
+    color: white; 
+    text-decoration: none;      
+    transition: 0.3s;
+}
+
+
+.armor-back:hover {
+    color: rgb(191, 12, 12);
+}
+
+
+
+/************************************************************************************************/
+
+.first {
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+}
+
+.hero-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    opacity: 0.65;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+}
+/*****************************************************/
+.about{
+    color: rgb(191, 12, 12);
+    text-align: center;
+
+}
+.about-card {
+    color: white;
+    display: flex;
+    text-align: justify;
+    width: 90%;
+    gap: 40px;
+    margin: 0 30px;
+     
+}
+.about-card span{
+    color: rgb(191, 12, 12);
+}
+.about-card h3{
+    color: rgb(191, 12, 12);
+    text-align: center;
+
+}
+
+.image img{
+    width: 400px;
+    
+
+    
+}
+.project{
+    color: white;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.project h2{
+    color: rgb(191, 12, 12);
+    text-align: center;
+}
+
+.my{
+    color: white;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.my h2{
+    color: rgb(191, 12, 12);
+    text-align: center;
+}
+
+.wow{
+    color: white;
+    text-align: justify;
+    margin-left: 30px;
+    
+}
+.wow h2{
+    text-align: center;
+    color: rgb(191, 12, 12);
+    margin-left: 30px;
+    filter: blur(4px);
+    transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+    
+
+
+
+.wow h2:hover {
+    filter: blur(0);
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(16, 104, 227, 0.917);
+    
+}
+
+
+/******************************************************************************************************/
+
+/* =========================================================
+   STARK INDUSTRIES — MOBILE VERSION
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* ---------- ОБЩЕЕ ---------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body {
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        width: 100%;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+    }
+
+    header nav ul li a {
+        font-size: 13px;
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .first {
+        min-height: 520px;
+        width: 100%;
+    }
+
+    .hero-background {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero-background img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        opacity: 0.45;
+    }
+
+    .hero-text {
+        margin-top: 80px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .future {
+        font-size: 30px;
+        line-height: 1.15;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .description {
+        width: 90%;
+        font-size: 13px;
+        line-height: 1.6;
+        margin: 0 auto 25px;
+    }
+
+
+    /* ---------- ИНФОРМАЦИОННЫЕ КАРТОЧКИ ---------- */
+
+    .second {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 320px;
+        height: 145px;
+        padding: 15px;
+    }
+
+    .info-card h2 {
+        font-size: 25px;
+    }
+
+    .info-card p {
+        font-size: 11px;
+    }
+
+
+    /* ---------- КНОПКИ ---------- */
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .hero-buttons ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 85%;
+        max-width: 300px;
+        height: 48px;
+        margin: 8px auto;
+    }
+
+
+    /* ---------- ARMOR CARDS ---------- */
+
+    .armors {
+        width: 100%;
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .armor {
+        width: 100%;
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .armor h2 {
+        font-size: 21px;
+    }
+
+    .armor p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .armor-detail {
+        font-size: 13px;
+    }
+
+
+    /* ---------- ARMOR DETAIL PAGE ---------- */
+
+    .model {
+        width: 100%;
+        padding: 0 15px;
+        margin: 30px 0 20px;
+    }
+
+    .model h2 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .armor-info {
+        width: 90%;
+        margin: 0 auto 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .armor-image {
+        width: 100%;
+    }
+
+    .armor-image img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .armor-details {
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid rgb(191, 12, 12);
+        padding: 20px 0 0;
+    }
+
+    .armor-details p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 12px 0;
+    }
+
+
+    /* ---------- DESCRIPTION ---------- */
+
+    .description {
+        width: 90%;
+        margin: 0 auto 35px;
+    }
+
+    .description h2,
+    .armor-technologies h2 {
+        font-size: 19px;
+        line-height: 1.3;
+        padding-bottom: 8px;
+    }
+
+    .description p {
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+
+    /* ---------- TECHNOLOGIES ---------- */
+
+    .technologies {
+        width: 100%;
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .technology-card {
+        width: 100%;
+        padding: 18px;
+        border-radius: 12px;
+    }
+
+    .technology-card h2 {
+        font-size: 20px;
+    }
+
+    .technology-card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .armor-technologies {
+        width: 90%;
+        margin: 0 auto 40px;
+    }
+
+    .armor-technologies ul {
+        padding-left: 20px;
+    }
+
+    .armor-technologies li {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 8px 0;
+    }
+
+
+    /* ---------- ABOUT ---------- */
+
+    .about {
+        font-size: 25px;
+        padding: 0 15px;
+    }
+
+    .about-card {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .about-card h3 {
+        font-size: 20px;
+    }
+
+    .about-card p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- PROJECT ---------- */
+
+    .project,
+    .my,
+    .wow {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .project h2,
+    .my h2,
+    .wow h2 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .project p,
+    .my p,
+    .wow p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .bottom-top-hr {
+        width: 85%;
+        margin: 35px auto;
+    }
+
+    .third {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .bottom-title {
+        font-size: 15px;
+    }
+
+    .bottom-p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .footer-p {
+        font-size: 7px;
+        line-height: 1.5;
+        padding: 0 15px;
+    }
+
+
+    /* ---------- BACK BUTTON ---------- */
+
+    .armor-back {
+        font-size: 13px;
+        margin: 25px auto;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    header {
+        padding: 12px 10px;
+    }
+
+    header nav ul {
+        gap: 7px 12px;
+    }
+
+    header nav ul li a {
+        font-size: 12px;
+    }
+
+    .future {
+        font-size: 25px;
+    }
+
+    .hero-text {
+        margin-top: 60px;
+    }
+
+    .info-card {
+        max-width: 290px;
+    }
+
+    .model h2 {
+        font-size: 22px;
+    }
+
+    .armor-details p {
+        font-size: 14px;
+    }
+
+    .description p {
+        font-size: 13px;
+    }
+}
+
+
+/*****************************************/
+
+.actors-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 70px auto;
+    color: white;
+}
+
+.actors-title {
+    color: rgb(191, 12, 12);
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+
+
+/* Сетка карточек */
+
+.actors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+
+/* Карточка */
+
+.actor-card {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid rgb(191, 12, 12);
+    border-radius: 12px;
+    padding: 20px;
+
+    color: white;
+    text-align: center;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+    text-align: justify;
+}
+
+
+/* Имя актёра */
+
+.actor-card h2 {
+    color: rgb(191, 12, 12);
+    font-size: 22px;
+    margin: 5px 0 15px;
+}
+
+
+/* Фото */
+
+.actor-card img {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+    margin: 0 auto 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(191, 12, 12, 0.7);
+
+    transition: 0.3s;
+}
+
+
+/* Персонаж */
+
+.actor-character {
+    color: rgb(191, 12, 12);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+/* Описание */
+
+.actor-card p {
+    color: white;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* Наведение на карточку */
+
+.actor-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgb(255, 0, 0);
+
+    box-shadow:
+        0 0 10px rgba(191, 12, 12, 0.5),
+        0 0 25px rgba(191, 12, 12, 0.25);
+}
+
+
+/* Наведение на фото */
+
+.actor-card:hover img {
+    transform: scale(1.03);
+
+    border-color: rgb(191, 12, 12);
+
+    box-shadow: 0 0 15px rgba(191, 12, 12, 0.5);
+}
+
+
+/* Если актёров пока нет */
+
+.actors > h2,
+.actors > p {
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .actors-section {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .actors-title {
+        font-size: 24px;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    }
+
+    .actors {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .actor-card {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .actor-card h2 {
+        font-size: 20px;
+    }
+
+    .actor-card img {
+        width: 100%;
+        max-width: 280px;
+        height: 320px;
+    }
+
+    .actor-card p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 768px) {
+    .technology-info {
+        flex-direction: column; /* Картинка сверху, текст снизу */
+        gap: 30px;
+    }
+    
+    .technology-image, 
+    .technology-details {
+        width: 100%; /* На телефоне занимают всю ширину */
+        text-align: center;
+    }
+
+    .technology-image img {
+        max-width: 100%;      /* Растягиваем на всю ширину экрана телефона */
+        max-height: 400px;    /* Защита от гигантских вертикальных фото */
+    }
+
+    .technology-details {
+        border-left: none;   /* Убираем красную линию слева */
+        border-top: 2px solid rgb(191, 12, 12); /* Добавляем сверху */
+        padding: 20px 0;
+    }
+}
+/* **************************/
+.technologies{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+    gap: 20px;
+}
+
+.technology{
+
+    background: black;
+    border: 2px solid rgb(191, 12, 12) ;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+   filter: blur(2px); 
+   transition: filter 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+.technology h2{
+    color: rgb(191, 12, 12) ;
+}
+.technology p{
+    color: white;
+    text-align: justify;
+    line-height: 1.6;
+}
+.technology-detail{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.technology-back{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+
+}
+
+.technology:hover {
+    color: rgb(191, 12, 12);
+}
+.technology:hover{
+    filter: blur(0); 
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(16, 104, 227, 0.917);
+}
+.technology-detail:hover{
+    color: rgb(191, 12, 12);
+}
+
+
+
+/* Заголовок технологии */
+.technology-model h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0; /* Убираем внешние отступы у самого h2 */
+}
+
+.technology-model {
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+
+.technology-info {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Блок с картинкой */
+.technology-image {
+    width: 45%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.technology-image img {
+    width: 100%;
+    max-width: min(350px, 100%);
+    height: auto;
+    border: 2px solid rgb(191, 12, 12);
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.technology-details {
+    width: 55%;
+    color: white;
+    border-left: 2px solid rgb(191, 12, 12);
+    padding-left: 30px;
+}
+
+.technology-details p {
+    font-size: 22px;
+    margin: 18px 0;
+    line-height: 1.6;
+}
+
+
+.technology-back {
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto 30px; 
+    color: white; 
+    text-decoration: none;      
+    transition: 0.3s;
+    
+}
+
+
+.technology-back:hover {
+    color: rgb(191, 12, 12);
+}
+
+/*********************************************************************** */
+
+.avengers-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: black ;
+    color: white;
+}
+
+.avengers-table td {
+    border: 1px solid rgb(191, 12, 12);
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    vertical-align: top;
+}
+
+
+.name-table {
+    text-align: center;
+    color: white;
+}
+
+
+.archive{
+    color: white;
+    text-align: center;
+}
+
+.history-back{
+    text-decoration: none;
+    
+    color: white;
+    transition: 0.3s;
+
+}
+
+.history-back:hover {
+    color: rgb(191, 12, 12);
+}
+
+.history-back {
+    display: block; 
+    width: fit-content; 
+    margin: 0 auto 30px; 
+    color: white; 
+    text-decoration: none;      
+    transition: 0.3s;
+    
+}
+
+
+/****************************************************/
+@media (max-width: 768px) {
+  .avengers-table {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    font-size: 14px;
+  }
+
+  .avengers-table td {
+    padding: 12px 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+    line-height: 1.4;
+  }
+
+  /* Контейнер для горизонтальной прокрутки таблицы */
+  .table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 auto 20px;
+  }
+
+  .history-back {
+    margin-bottom: 20px;
+  }
+}

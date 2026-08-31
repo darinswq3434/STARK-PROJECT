@@ -1,0 +1,36 @@
+{% extends "suits/base.html" %}
+
+{% block content %}
+
+<div class="armors">
+    
+    {% for armor in armors %}
+
+    <div class="armor">
+
+        <h2>{{ armor.name }}</h2>
+
+        <p>
+            <b>Модель:</b> {{ armor.model_number }}
+        </p>
+
+        <p>
+            <b>Год создания:</b> {{ armor.creation_year }}
+        </p>
+
+        <p>
+            <b>Создатель:</b> {{ armor.creator }}
+        </p>
+
+        <a href="{% url 'armor_detail' armor.id %}" class="armor-detail">
+            VIEW DETAILS →
+        </a>
+
+    </div>
+
+{% empty %}
+
+    <h2>Пока нет ни одной брони.</h2>
+
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "suits/base.html" %}
+
+{% block content %}
+
+<div class="model">
+    <h2>{{ armor.name }}</h2>
+</div>
+
+<div class="armor-info">
+
+    <div class="armor-image">
+        {% if armor.image %}
+            <img src="{{ armor.image.url }}" alt="{{ armor.name }}">
+        {% endif %}
+    </div>
+
+    <div class="armor-details">
+        <p><b>Модель:</b> {{ armor.model_number }}</p>
+        <p><b>Год создания:</b> {{ armor.creation_year }}</p>
+        <p><b>Создатель:</b> {{ armor.creator }}</p>
+    </div>
+
+</div>
+
+<div class="description">
+    <h2>Описание</h2>
+    <p>{{ armor.description }}</p>
+</div>
+
+<div class="armor-technologies">
+    <h2>Технологии</h2>
+
+    <ul>
+        {% for technology in armor.technologies.all %}
+            <li>{{ technology }}</li>
+        {% empty %}
+            <li>Нет технологий</li>
+        {% endfor %}
+    </ul>
+</div>
+    <a href="{% url 'armor' %}" class="armor-back">
+        BACK →
+    </a>
+
+{% endblock %}
+

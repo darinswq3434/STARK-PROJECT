@@ -1,0 +1,25 @@
+{% extends "suits/base.html" %}
+
+{% block content %}
+
+<div class="technology-model">
+    <h2>{{ technology.name }}</h2>
+</div>
+    <div class="technology-info">
+
+        <div class="technology-image">
+            {% if technology.image %}
+                <img src="{{ technology.image.url }}" alt="{{ technology.name }}">
+            {% endif %}
+        </div>
+
+        <div class="technology-details">
+            <p>{{ technology.description}}</p>
+        </div>
+
+    </div>
+            <a href="{% url 'technology' %}" class="technology-back">
+                BACK →
+            </a>
+
+{% endblock %}
